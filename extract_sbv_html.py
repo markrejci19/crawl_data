@@ -9,54 +9,110 @@ def extract_sbv_html(html_path):
     rows = table.find_all("tr")
 
     results = []
-    group_stack = [""] * 6  # DATA_GROUP_L1 -> DATA_GROUP_L6
+    current_main_group = ""  # To track the current main section
+    group_stack = [""] * 6  # Stack to maintain hierarchy
 
     for tr in rows:
         tds = tr.find_all("td")
         if len(tds) < 5:
             continue
 
-        # Lấy text các cột
-        cols = [td.get_text(strip=True) for td in tds]
-        # Xác định vị trí cột chỉ tiêu và giá trị
-        # Chỉ tiêu thường ở cột 3 hoặc 4, giá trị ở cột 5
-        value = None
-        for i in range(len(cols)-1, 1, -1):
-            # Tìm giá trị số hoặc số âm hoặc NULL
-            if cols[i].replace('.', '', 1).replace('-', '', 1).isdigit() or cols[i].upper() == "NULL":
-                value = cols[i] if cols[i].upper() != "NULL" else "NULL"
-                value_col = i
+        # Look for text content and value in this row
+        text_content = ""
+        value_content = ""
+        padding_level = 0
+        is_main_section = False
+        
+        for i, td in enumerate(tds):
+            text = td.get_text(strip=True)
+            if not text:
+                continue
+                
+            style = td.get('style', '')
+            
+            # Check if this is a main section header (has background color)
+            if 'background-color: #E7E8E9' in style:
+                # Remove letter prefixes like "A. ", "B. ", "C. ", etc.
+                clean_text = text
+                if len(text) > 3 and text[1:3] == ". ":
+                    clean_text = text[3:]
+                
+                current_main_group = clean_text
+                is_main_section = True
+                text_content = clean_text
+                
+                # Reset group stack when entering new main section
+                group_stack = [clean_text] + [""] * 5
+                
+                # Look for value in the next cells
+                for j in range(i+1, len(tds)):
+                    val_text = tds[j].get_text(strip=True)
+                    if val_text and (val_text.replace('.', '', 1).replace('-', '', 1).replace(',', '').isdigit() or val_text.upper() == "NULL"):
+                        value_content = val_text if val_text.upper() != "NULL" else "NULL"
+                        break
                 break
-        else:
-            continue
+            
+            # Check for regular items with padding
+            elif 'padding-left:' in style:
+                # Extract padding value
+                import re
+                padding_match = re.search(r'padding-left:\s*(\d+)px', style)
+                if padding_match:
+                    padding_pixels = int(padding_match.group(1))
+                    
+                    # Map padding to hierarchy level
+                    if padding_pixels == 20:
+                        padding_level = 1  # DATA_GROUP_L2
+                    elif padding_pixels == 57:
+                        padding_level = 1  # Also DATA_GROUP_L2 (sub-items like "ròng")
+                    elif padding_pixels == 90:
+                        padding_level = 2  # DATA_GROUP_L3
+                    elif padding_pixels == 125:
+                        padding_level = 3  # DATA_GROUP_L4
+                    elif padding_pixels == 160:
+                        padding_level = 4  # DATA_GROUP_L5
+                    
+                    text_content = text
+                    
+                    # Look for value in the next cells
+                    for j in range(i+1, len(tds)):
+                        val_text = tds[j].get_text(strip=True)
+                        if val_text and (val_text.replace('.', '', 1).replace('-', '', 1).replace(',', '').isdigit() or val_text.upper() == "NULL"):
+                            value_content = val_text if val_text.upper() != "NULL" else "NULL"
+                            break
+                    break
 
-        # Xác định các group
-        # Tìm chỉ tiêu (từ trái sang phải, bỏ qua cột rỗng)
-        group_cols = []
-        for i in range(2, value_col):
-            if cols[i]:
-                group_cols.append(cols[i])
-        # Đẩy group vào stack
-        for i, g in enumerate(group_cols):
-            group_stack[i] = g
-        # Xóa các group sâu hơn nếu không có dữ liệu
-        for i in range(len(group_cols), 6):
-            group_stack[i] = ""
-
-        # Nếu là dòng tổng (ví dụ: "A. Cán cân vãng lai"), chỉ điền group 1
-        if group_cols and not any(group_stack[1:]):
-            group_stack[0] = group_cols[0]
-            group_stack[1:] = [""] * 5
-
-        results.append({
-            "DATA_GROUP_L1": group_stack[0],
-            "DATA_GROUP_L2": group_stack[1],
-            "DATA_GROUP_L3": group_stack[2],
-            "DATA_GROUP_L4": group_stack[3],
-            "DATA_GROUP_L5": group_stack[4],
-            "DATA_GROUP_L6": group_stack[5],
-            "VALUE": value
-        })
+        # Add the data row if we found both text and value
+        if text_content and value_content:
+            if is_main_section:
+                # This is a main section summary row
+                results.append({
+                    "DATA_GROUP_L1": group_stack[0],
+                    "DATA_GROUP_L2": group_stack[1],
+                    "DATA_GROUP_L3": group_stack[2],
+                    "DATA_GROUP_L4": group_stack[3],
+                    "DATA_GROUP_L5": group_stack[4],
+                    "DATA_GROUP_L6": group_stack[5],
+                    "VALUE": value_content
+                })
+            else:
+                # Update the group stack at the appropriate level
+                if padding_level > 0:
+                    # Clear deeper levels
+                    for i in range(padding_level, 6):
+                        group_stack[i] = ""
+                    # Set this level
+                    group_stack[padding_level] = text_content
+                
+                results.append({
+                    "DATA_GROUP_L1": group_stack[0],
+                    "DATA_GROUP_L2": group_stack[1],
+                    "DATA_GROUP_L3": group_stack[2],
+                    "DATA_GROUP_L4": group_stack[3],
+                    "DATA_GROUP_L5": group_stack[4],
+                    "DATA_GROUP_L6": group_stack[5],
+                    "VALUE": value_content
+                })
 
     df = pd.DataFrame(results)
     return df
