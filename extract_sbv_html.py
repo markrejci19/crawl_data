@@ -142,13 +142,27 @@ def extract_sbv_html(html_path, output_path="sbv_data_IV_2024_v1_20250904.csv"):
     return df
 
 # Hàm chuyển file kết quả hiện tại về dạng giống với file mẫu result.csv
-def match_format_with_sample():
-    # Đọc file sbv_data_IV_2024_v1_20250904.csv đã tạo
-    df = pd.read_csv("sbv_data_IV_2024_v1_20250904.csv", encoding="utf-8")
+def match_format_with_sample(input_csv=None):
+    # Tìm file CSV mới nhất nếu không được chỉ định
+    if input_csv is None:
+        import glob
+        csv_files = glob.glob("sbv_data_*.csv")
+        if csv_files:
+            input_csv = sorted(csv_files)[-1]
+        else:
+            raise FileNotFoundError("No SBV CSV files found!")
     
-    # Đọc file mẫu để so sánh
+    # Đọc file CSV đã tạo
+    df = pd.read_csv(input_csv, encoding="utf-8")
+    
+    # Đọc file mẫu để so sánh (thử các encoding khác nhau)
     try:
-        sample_df = pd.read_csv("result.csv", encoding="latin1")
+        # Thử đọc với UTF-8 trước
+        try:
+            sample_df = pd.read_csv("result.csv", encoding="utf-8")
+        except UnicodeDecodeError:
+            # Nếu không được, thử latin1
+            sample_df = pd.read_csv("result.csv", encoding="latin1")
         
         # Kiểm tra xem giá trị của L1 và L2 trong file mẫu có đặc biệt không
         # Nếu có, áp dụng mapping đặc biệt
@@ -169,19 +183,33 @@ def match_format_with_sample():
     except:
         print("Warning: Không thể đọc file mẫu để so sánh. Tiếp tục với kết quả hiện tại.")
     
-    # Lưu file với tên giống file mẫu
-    df.to_csv("result_new.csv", index=False, encoding="latin1")
+    # Lưu file với UTF-8 encoding theo yêu cầu
+    df.to_csv("result_new.csv", index=False, encoding="utf-8")
     return df
 
 if __name__ == "__main__":
-    df = extract_sbv_html("sbv_data_IV_2024_v1_20250904.html")
-    print(f"Extracted {len(df)} rows")
-    print(df.head(20))
+    # Tìm file HTML SBV để xử lý
+    import glob
+    html_files = glob.glob("sbv_data_*.html")
     
-    # Thử khớp với file mẫu
-    try:
-        match_df = match_format_with_sample()
-        print("\nMatched format with sample:")
-        print(match_df.head(20))
-    except Exception as e:
-        print(f"Error matching format with sample: {str(e)}")
+    if html_files:
+        # Sử dụng file HTML mới nhất
+        html_file = sorted(html_files)[-1]
+        print(f"Processing HTML file: {html_file}")
+        
+        # Tạo tên file output dựa trên tên file input
+        output_file = html_file.replace('.html', '.csv')
+        
+        df = extract_sbv_html(html_file, output_file)
+        print(f"Extracted {len(df)} rows to {output_file}")
+        print(df.head(20))
+        
+        # Thử khớp với file mẫu
+        try:
+            match_df = match_format_with_sample()
+            print(f"\nMatched format with sample and saved to result_new.csv:")
+            print(match_df.head(20))
+        except Exception as e:
+            print(f"Error matching format with sample: {str(e)}")
+    else:
+        print("No SBV HTML files found!")

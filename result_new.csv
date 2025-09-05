@@ -1,20 +1,51 @@
 DATA_GROUP_L1,DATA_GROUP_L2,DATA_GROUP_L3,DATA_GROUP_L4,DATA_GROUP_L5,DATA_GROUP_L6,VALUE
-C�n c�n v�ng lai,,,,,,7510
-C�n c�n v�ng lai,H�ng h�a: Xu?t kh?u f.o.b,,,,,105882
-C�n c�n v�ng lai,H�ng h�a: Nh?p kh?u f.o.b,,,,,97030
-C�n c�n v�ng lai,H�ng h�a (r�ng),,,,,8852
-C�n c�n v�ng lai,D?ch v?: Xu?t kh?u,,,,,6561
-C�n c�n v�ng lai,D?ch v?: Nh?p kh?u,,,,,9558
-C�n c�n v�ng lai,D?ch v? (r�ng),,,,,-2997
-C�n c�n v�ng lai,Thu nh?p ??u t? (Thu nh?p s? c?p): Thu,,,,,1380
-C�n c�n v�ng lai,Thu nh?p ??u t? (Thu nh?p s? c?p): Chi,,,,,3805
-C�n c�n v�ng lai,Thu nh?p ??u t? (thu nh?p s? c?p) (r�ng),,,,,-2425
-C�n c�n v�ng lai,Chuy?n giao v�ng lai (Thu nh?p th? c?p): Thu,,,,,5078
-C�n c�n v�ng lai,Chuy?n giao v�ng lai (Thu nh?p th? c?p): Chi,,,,,998
-C�n c�n v�ng lai,Chuy?n giao v�ng lai (thu nh?p th? c?p) (r�ng),,,,,4080
-C�n c�n v?n,C�n c�n v?n: Thu,,,,,0
-C�n c�n v?n,C�n c�n v?n: Chi,,,,,0
-C�n c�n v?n,T?ng c�n c�n v�ng lai v� c�n c�n v?n,,,,,0
-C�n c�n t�i ch�nh,,,,,,267
-C�n c�n t�i ch�nh,??u t? tr?c ti?p ra n??c ngo�i: T�i s?n c�,,,,,-230
-C�n c�n t�i ch�nh,??u t? tr?c ti?p (r�ng),,,,,6400
+Cán cân vãng lai,,,,,,7510
+Cán cân vãng lai,Hàng hóa: Xu?t kh?u f.o.b,,,,,105882
+Cán cân vãng lai,Hàng hóa: Nh?p kh?u f.o.b,,,,,97030
+Cán cân vãng lai,Hàng hóa (ròng),,,,,8852
+Cán cân vãng lai,D?ch v?: Xu?t kh?u,,,,,6561
+Cán cân vãng lai,D?ch v?: Nh?p kh?u,,,,,9558
+Cán cân vãng lai,D?ch v? (ròng),,,,,-2997
+Cán cân vãng lai,Thu nh?p ??u t? (Thu nh?p s? c?p): Thu,,,,,1380
+Cán cân vãng lai,Thu nh?p ??u t? (Thu nh?p s? c?p): Chi,,,,,3805
+Cán cân vãng lai,Thu nh?p ??u t? (thu nh?p s? c?p) (ròng),,,,,-2425
+Cán cân vãng lai,Chuy?n giao vãng lai (Thu nh?p th? c?p): Thu,,,,,5078
+Cán cân vãng lai,Chuy?n giao vãng lai (Thu nh?p th? c?p): Chi,,,,,998
+Cán cân vãng lai,Chuy?n giao vãng lai (thu nh?p th? c?p) (ròng),,,,,4080
+Cán cân v?n,Cán cân v?n: Thu,,,,,0
+Cán cân v?n,Cán cân v?n: Chi,,,,,0
+Cán cân v?n,T?ng cán cân vãng lai và cán cân v?n,,,,,0
+Cán cân tài chính,,,,,,267
+Cán cân tài chính,??u t? tr?c ti?p ra n??c ngoài: Tài s?n có,,,,,-230
+Cán cân tài chính,??u t? tr?c ti?p (ròng),,,,,6400
+Cán cân tài chính,??u t? tr?c ti?p (ròng),Đầu tư trực tiếp (ròng),,,,6170
+Cán cân tài chính,??u t? gián ti?p ra n??c ngoài: Tài s?n có,,,,,7
+Cán cân tài chính,??u t? gián ti?p (ròng),,,,,-2049
+Cán cân tài chính,??u t? gián ti?p (ròng),Đầu tư gián tiếp (ròng),,,,-2042
+Cán cân tài chính,??u t? khác: Tài s?n có,,,,,-4252
+Cán cân tài chính,??u t? khác: Tài s?n có,Tiền và tiền gửi,,,,-3801
+Cán cân tài chính,??u t? khác: Tài s?n có,Tiền và tiền gửi,Tổ chức tín dụng,,,-782
+Cán cân tài chính,??u t? khác: Tài s?n có,Tiền và tiền gửi,Dân cư,,,-3019
+Cán cân tài chính,??u t? khác: Tài s?n có,Các khoản phải thu/ phải trả khác,,,,-451
+Cán cân tài chính,??u t? khác: Tài s?n n?,,,,,391
+Cán cân tài chính,??u t? khác: Tài s?n n?,Tiền và tiền gửi,,,,1047
+Cán cân tài chính,??u t? khác: Tài s?n n?,Tiền và tiền gửi,Tổ chức tín dụng,,,1096
+Cán cân tài chính,??u t? khác: Tài s?n n?,Tiền và tiền gửi,Dân cư,,,-49
+Cán cân tài chính,??u t? khác: Tài s?n n?,"Vay, trả nợ nước ngoài",,,,-656
+Cán cân tài chính,??u t? khác: Tài s?n n?,"Vay, trả nợ nước ngoài",Ngắn hạn,,,630
+Cán cân tài chính,??u t? khác: Tài s?n n?,"Vay, trả nợ nước ngoài",Ngắn hạn,Rút vốn,,6607
+Cán cân tài chính,??u t? khác: Tài s?n n?,"Vay, trả nợ nước ngoài",Ngắn hạn,Trả nợ gốc,,-5977
+Cán cân tài chính,??u t? khác: Tài s?n n?,"Vay, trả nợ nước ngoài",Dài hạn,,,-1286
+Cán cân tài chính,??u t? khác: Tài s?n n?,"Vay, trả nợ nước ngoài",Dài hạn,Rút vốn,,3589
+Cán cân tài chính,??u t? khác: Tài s?n n?,"Vay, trả nợ nước ngoài",Dài hạn,Rút vốn,Chính phủ,195
+Cán cân tài chính,??u t? khác: Tài s?n n?,"Vay, trả nợ nước ngoài",Dài hạn,Rút vốn,Tư nhân,3394
+Cán cân tài chính,??u t? khác: Tài s?n n?,"Vay, trả nợ nước ngoài",Dài hạn,Trả nợ gốc,,-4875
+Cán cân tài chính,??u t? khác: Tài s?n n?,"Vay, trả nợ nước ngoài",Dài hạn,Trả nợ gốc,Chính phủ,-622
+Cán cân tài chính,??u t? khác: Tài s?n n?,"Vay, trả nợ nước ngoài",Dài hạn,Trả nợ gốc,Tư nhân,-4253
+Cán cân tài chính,??u t? khác: Tài s?n n?,,,,,-3861
+Cán cân tài chính,??u t? khác: Tài s?n n?,,,,,-9448
+Cán cân tài chính,??u t? khác: Tài s?n n?,,,,,-1671
+Cán cân tài chính,??u t? khác: Tài s?n n?,,,,,1671
+L?i và Sai sót,,,,,,1671
+Cán cân t?ng th?,,,,,,0
+D? tr? và các h?ng m?c liên quan,,,,,,0
