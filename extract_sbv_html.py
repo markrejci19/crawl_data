@@ -148,7 +148,11 @@ def match_format_with_sample():
     
     # Đọc file mẫu để so sánh
     try:
-        sample_df = pd.read_csv("result.csv", encoding="latin1")
+        # Thử đọc file mẫu với encoding utf-8 trước, sau đó latin1
+        try:
+            sample_df = pd.read_csv("result.csv", encoding="utf-8")
+        except UnicodeDecodeError:
+            sample_df = pd.read_csv("result.csv", encoding="latin1")
         
         # Kiểm tra xem giá trị của L1 và L2 trong file mẫu có đặc biệt không
         # Nếu có, áp dụng mapping đặc biệt
@@ -166,22 +170,47 @@ def match_format_with_sample():
             if key in special_mapping:
                 df.at[i, 'DATA_GROUP_L1'] = special_mapping[key][0]
                 df.at[i, 'DATA_GROUP_L2'] = special_mapping[key][1]
-    except:
-        print("Warning: Không thể đọc file mẫu để so sánh. Tiếp tục với kết quả hiện tại.")
+    except Exception as e:
+        print(f"Warning: Không thể đọc file mẫu để so sánh: {str(e)}. Tiếp tục với kết quả hiện tại.")
     
-    # Lưu file với tên giống file mẫu
-    df.to_csv("result_new.csv", index=False, encoding="latin1")
+    # Lưu file với UTF-8 encoding cho Oracle database
+    df.to_csv("result_new.csv", index=False, encoding="utf-8")
     return df
 
 if __name__ == "__main__":
-    df = extract_sbv_html("sbv_data_IV_2024_v1_20250904.html")
+    import sys
+    
+    # Xử lý tham số dòng lệnh
+    if len(sys.argv) > 1:
+        html_file = sys.argv[1]
+    else:
+        # Mặc định sử dụng file IV/2024
+        html_file = "sbv_data_IV_2024_v1_20250904.html"
+    
+    # Tự động tạo tên file output dựa trên input
+    if "I_2025" in html_file:
+        output_file = "sbv_data_I_2025_v1_20250904.csv"
+    else:
+        output_file = "sbv_data_IV_2024_v1_20250904.csv"
+    
+    print(f"Processing HTML file: {html_file}")
+    print(f"Output CSV file: {output_file}")
+    
+    df = extract_sbv_html(html_file, output_file)
     print(f"Extracted {len(df)} rows")
     print(df.head(20))
     
-    # Thử khớp với file mẫu
+    # Thử khớp với file mẫu (chỉ nếu có file result.csv)
     try:
-        match_df = match_format_with_sample()
-        print("\nMatched format with sample:")
-        print(match_df.head(20))
+        import os
+        if os.path.exists("result.csv"):
+            match_df = match_format_with_sample()
+            print("\nMatched format with sample:")
+            print(match_df.head(20))
+        else:
+            print("\nNo sample file (result.csv) found, skipping format matching.")
     except Exception as e:
         print(f"Error matching format with sample: {str(e)}")
+    
+    print(f"\nData successfully extracted and saved in UTF-8 encoding to: {output_file}")
+    print("This file is ready for Oracle database import.")
