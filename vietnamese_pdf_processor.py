@@ -180,8 +180,8 @@ class VietnamesePDFProcessor:
         # Chuẩn hóa khoảng trắng
         text = re.sub(r'\s+', ' ', text).strip()
         
-        # Xử lý số và dấu thập phân
-        text = re.sub(r'(\d+),(\d+)', r'\1.\2', text)
+        # Xử lý số và dấu thập phân - chỉ thay thế dấu phẩy giữa các chữ số
+        text = re.sub(r'(\d),(\d)', r'\1.\2', text)
         
         return text
     
