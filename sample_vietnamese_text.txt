@@ -1,0 +1,16 @@
+
+NGÂN HÀNG THƯƠNG MẠI CỔ PHẦN VIỆT NAM THỊNH VƯỢNG
+BIỂU LÃI SUẤT NIÊM YẾT
+
+Loại tiền gửi                    Kỳ hạn          Lãi suất (%/năm)
+Tiền gửi không kỳ hạn           Không kỳ hạn    0.50
+Tiền gửi có kỳ hạn              1 tháng         4.20
+                                3 tháng         4.80
+                                6 tháng         5.20
+                                12 tháng        6.50
+                                24 tháng        7.00
+
+Ghi chú:
+- Lãi suất áp dụng từ ngày 08/07/2025
+- Áp dụng cho khách hàng cá nhân
+- Có thể thay đổi mà không báo trước
