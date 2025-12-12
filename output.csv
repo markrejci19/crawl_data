@@ -1,0 +1,151 @@
+L1,L2,L3,YEAR,Month,CURRENCY,VALUE,VALUE_TYPE,CURRENCY_RATIO,EXCHANGE_RATE
+DƯ NỢ,,,2019,12,USD,"125.215,30",Thực tế,6,
+DƯ NỢ,,,2019,12,VND,"2.897.857,78",Thực tế,9,23143.0
+DƯ NỢ,,,2020,12,USD,"135.396,27",Thực tế,6,
+DƯ NỢ,,,2020,12,VND,"3.138.620,82",Thực tế,9,23181.0
+DƯ NỢ,,,2021,12,USD,"142.009,30",Thực tế,6,
+DƯ NỢ,,,2021,12,VND,"3.284.107,17",Thực tế,9,23126.0
+DƯ NỢ,,,2022,12,USD,"137.176,15",Dự kiến,6,
+DƯ NỢ,,,2022,12,VND,"3.248.468,46",Dự kiến,9,23681.0
+DƯ NỢ,,,2023,6,USD,"141.931,46",Dự kiến,6,
+DƯ NỢ,,,2023,6,VND,"3.358.098,36",Dự kiến,9,23660.0
+DƯ NỢ,,Nợ nước ngoài,2019,12,USD,"47.733,63",Thực tế,6,
+DƯ NỢ,,Nợ nước ngoài,2019,12,VND,"1.104.699,34",Thực tế,9,23143.0
+DƯ NỢ,,Nợ nước ngoài,2020,12,USD,"49.008,24",Thực tế,6,
+DƯ NỢ,,Nợ nước ngoài,2020,12,VND,"1.136.059,94",Thực tế,9,23181.0
+DƯ NỢ,,Nợ nước ngoài,2021,12,USD,"46.552,13",Thực tế,6,
+DƯ NỢ,,Nợ nước ngoài,2021,12,VND,"1.076.564,56",Thực tế,9,23126.0
+DƯ NỢ,,Nợ nước ngoài,2022,12,USD,"41.171,97",Dự kiến,6,
+DƯ NỢ,,Nợ nước ngoài,2022,12,VND,"974.993,41",Dự kiến,9,23681.0
+DƯ NỢ,,Nợ nước ngoài,2023,6,USD,"41.570,46",Dự kiến,6,
+DƯ NỢ,,Nợ nước ngoài,2023,6,VND,"983.556,99",Dự kiến,9,23660.0
+DƯ NỢ,,Nợ trong nước,2019,12,USD,"77.481,68",Thực tế,6,
+DƯ NỢ,,Nợ trong nước,2019,12,VND,"1.793.158,44",Thực tế,9,23143.0
+DƯ NỢ,,Nợ trong nước,2020,12,USD,"86.388,03",Thực tế,6,
+DƯ NỢ,,Nợ trong nước,2020,12,VND,"2.002.560,88",Thực tế,9,23181.0
+DƯ NỢ,,Nợ trong nước,2021,12,USD,"95.457,17",Thực tế,6,
+DƯ NỢ,,Nợ trong nước,2021,12,VND,"2.207.542,61",Thực tế,9,23126.0
+DƯ NỢ,,Nợ trong nước,2022,12,USD,"96.004,18",Dự kiến,6,
+DƯ NỢ,,Nợ trong nước,2022,12,VND,"2.273.475,05",Dự kiến,9,23681.0
+DƯ NỢ,,Nợ trong nước,2023,6,USD,"100.361,01",Dự kiến,6,
+DƯ NỢ,,Nợ trong nước,2023,6,VND,"2.374.541,37",Dự kiến,9,23660.0
+RÚT VỐN TRONG KỲ,,,2019,12,USD,"12.388,33",Thực tế,6,
+RÚT VỐN TRONG KỲ,,,2019,12,VND,"285.044,89",Thực tế,9,23143.0
+RÚT VỐN TRONG KỲ,,,2020,12,USD,"19.166,89",Thực tế,6,
+RÚT VỐN TRONG KỲ,,,2020,12,VND,"444.751,39",Thực tế,9,23181.0
+RÚT VỐN TRONG KỲ,,,2021,12,USD,"19.561,23",Thực tế,6,
+RÚT VỐN TRONG KỲ,,,2021,12,VND,"452.901,24",Thực tế,9,23126.0
+RÚT VỐN TRONG KỲ,,,2022,12,USD,"11.197,00",Dự kiến,6,
+RÚT VỐN TRONG KỲ,,,2022,12,VND,"260.246,27",Dự kiến,9,23681.0
+RÚT VỐN TRONG KỲ,,,2023,6,USD,"8.900,78",Dự kiến,6,
+RÚT VỐN TRONG KỲ,,,2023,6,VND,"211.107,12",Dự kiến,9,23660.0
+RÚT VỐN TRONG KỲ,,Nợ nước ngoài,2019,12,USD,"2.285,81",Thực tế,6,
+RÚT VỐN TRONG KỲ,,Nợ nước ngoài,2019,12,VND,"52.515,11",Thực tế,9,23143.0
+RÚT VỐN TRONG KỲ,,Nợ nước ngoài,2020,12,USD,"2.230,40",Thực tế,6,
+RÚT VỐN TRONG KỲ,,Nợ nước ngoài,2020,12,VND,"51.658,29",Thực tế,9,23181.0
+RÚT VỐN TRONG KỲ,,Nợ nước ngoài,2021,12,USD,"1.933,36",Thực tế,6,
+RÚT VỐN TRONG KỲ,,Nợ nước ngoài,2021,12,VND,"44.688,24",Thực tế,9,23126.0
+RÚT VỐN TRONG KỲ,,Nợ nước ngoài,2022,12,USD,"1.954,23",Dự kiến,6,
+RÚT VỐN TRONG KỲ,,Nợ nước ngoài,2022,12,VND,"45.524,27",Dự kiến,9,23681.0
+RÚT VỐN TRONG KỲ,,Nợ nước ngoài,2023,6,USD,"659,30",Dự kiến,6,
+RÚT VỐN TRONG KỲ,,Nợ nước ngoài,2023,6,VND,"16.369,15",Dự kiến,9,23660.0
+RÚT VỐN TRONG KỲ,,Nợ trong nước,2019,12,USD,"10.102,52",Thực tế,6,
+RÚT VỐN TRONG KỲ,,Nợ trong nước,2019,12,VND,"232.529,78",Thực tế,9,23143.0
+RÚT VỐN TRONG KỲ,,Nợ trong nước,2020,12,USD,"16.936,49",Thực tế,6,
+RÚT VỐN TRONG KỲ,,Nợ trong nước,2020,12,VND,"393.093,10",Thực tế,9,23181.0
+RÚT VỐN TRONG KỲ,,Nợ trong nước,2021,12,USD,"17.627,87",Thực tế,6,
+RÚT VỐN TRONG KỲ,,Nợ trong nước,2021,12,VND,"408.213,00",Thực tế,9,23126.0
+RÚT VỐN TRONG KỲ,,Nợ trong nước,2022,12,USD,"9.242,78",Dự kiến,6,
+RÚT VỐN TRONG KỲ,,Nợ trong nước,2022,12,VND,"214.722,00",Dự kiến,9,23681.0
+RÚT VỐN TRONG KỲ,,Nợ trong nước,2023,6,USD,"8.241,48",Dự kiến,6,
+RÚT VỐN TRONG KỲ,,Nợ trong nước,2023,6,VND,"194.737,97",Dự kiến,9,23660.0
+TỔNG TRẢ NỢ TRONG KỲ,,,2019,12,USD,"12.766,65",Thực tế,6,
+TỔNG TRẢ NỢ TRONG KỲ,,,2019,12,VND,"293.834,98",Thực tế,9,23143.0
+TỔNG TRẢ NỢ TRONG KỲ,,,2020,12,USD,"15.633,04",Thực tế,6,
+TỔNG TRẢ NỢ TRONG KỲ,,,2020,12,VND,"362.802,15",Thực tế,9,23181.0
+TỔNG TRẢ NỢ TRONG KỲ,,,2021,12,USD,"15.942,20",Thực tế,6,
+TỔNG TRẢ NỢ TRONG KỲ,,,2021,12,VND,"369.170,14",Thực tế,9,23126.0
+TỔNG TRẢ NỢ TRONG KỲ,,,2022,12,USD,"13.614,93",Dự kiến,6,
+TỔNG TRẢ NỢ TRONG KỲ,,,2022,12,VND,"316.305,61",Dự kiến,9,23681.0
+TỔNG TRẢ NỢ TRONG KỲ,,,2023,6,USD,"7.645,62",Dự kiến,6,
+TỔNG TRẢ NỢ TRONG KỲ,,,2023,6,VND,"180.663,77",Dự kiến,9,23660.0
+TỔNG TRẢ NỢ TRONG KỲ,,Nợ nước ngoài,2019,12,USD,"2.556,14",Thực tế,6,
+TỔNG TRẢ NỢ TRONG KỲ,,Nợ nước ngoài,2019,12,VND,"58.819,63",Thực tế,9,23143.0
+TỔNG TRẢ NỢ TRONG KỲ,,Nợ nước ngoài,2020,12,USD,"3.508,12",Thực tế,6,
+TỔNG TRẢ NỢ TRONG KỲ,,Nợ nước ngoài,2020,12,VND,"81.384,86",Thực tế,9,23181.0
+TỔNG TRẢ NỢ TRONG KỲ,,Nợ nước ngoài,2021,12,USD,"3.156,35",Thực tế,6,
+TỔNG TRẢ NỢ TRONG KỲ,,Nợ nước ngoài,2021,12,VND,"73.084,91",Thực tế,9,23126.0
+TỔNG TRẢ NỢ TRONG KỲ,,Nợ nước ngoài,2022,12,USD,"3.412,18",Dự kiến,6,
+TỔNG TRẢ NỢ TRONG KỲ,,Nợ nước ngoài,2022,12,VND,"79.282,16",Dự kiến,9,23681.0
+TỔNG TRẢ NỢ TRONG KỲ,,Nợ nước ngoài,2023,6,USD,"1.702,74",Dự kiến,6,
+TỔNG TRẢ NỢ TRONG KỲ,,Nợ nước ngoài,2023,6,VND,"40.239,50",Dự kiến,9,23660.0
+TỔNG TRẢ NỢ TRONG KỲ,,Nợ trong nước,2019,12,USD,"10.210,51",Thực tế,6,
+TỔNG TRẢ NỢ TRONG KỲ,,Nợ trong nước,2019,12,VND,"235.015,35",Thực tế,9,23143.0
+TỔNG TRẢ NỢ TRONG KỲ,,Nợ trong nước,2020,12,USD,"12.124,92",Thực tế,6,
+TỔNG TRẢ NỢ TRONG KỲ,,Nợ trong nước,2020,12,VND,"281.417,29",Thực tế,9,23181.0
+TỔNG TRẢ NỢ TRONG KỲ,,Nợ trong nước,2021,12,USD,"12.785,85",Thực tế,6,
+TỔNG TRẢ NỢ TRONG KỲ,,Nợ trong nước,2021,12,VND,"296.085,23",Thực tế,9,23126.0
+TỔNG TRẢ NỢ TRONG KỲ,,Nợ trong nước,2022,12,USD,"10.202,75",Dự kiến,6,
+TỔNG TRẢ NỢ TRONG KỲ,,Nợ trong nước,2022,12,VND,"237.023,45",Dự kiến,9,23681.0
+TỔNG TRẢ NỢ TRONG KỲ,,Nợ trong nước,2023,6,USD,"5.942,88",Dự kiến,6,
+TỔNG TRẢ NỢ TRONG KỲ,,Nợ trong nước,2023,6,VND,"140.424,27",Dự kiến,9,23660.0
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả nợ gốc trong kỳ,,2019,12,USD,"7.898,96",Thực tế,6,
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả nợ gốc trong kỳ,,2019,12,VND,"181.795,89",Thực tế,9,23143.0
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả nợ gốc trong kỳ,,2020,12,USD,"10.705,86",Thực tế,6,
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả nợ gốc trong kỳ,,2020,12,VND,"248.444,16",Thực tế,9,23181.0
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả nợ gốc trong kỳ,,2021,12,USD,"11.301,31",Thực tế,6,
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả nợ gốc trong kỳ,,2021,12,VND,"261.698,83",Thực tế,9,23126.0
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả nợ gốc trong kỳ,,2022,12,USD,"9.219,39",Dự kiến,6,
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả nợ gốc trong kỳ,,2022,12,VND,"214.183,91",Dự kiến,9,23681.0
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả nợ gốc trong kỳ,,2023,6,USD,"5.294,76",Dự kiến,6,
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả nợ gốc trong kỳ,,2023,6,VND,"125.114,42",Dự kiến,9,23660.0
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả nợ gốc trong kỳ,Nợ nước ngoài,2019,12,USD,"1.820,88",Thực tế,6,
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả nợ gốc trong kỳ,Nợ nước ngoài,2019,12,VND,"41.896,61",Thực tế,9,23143.0
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả nợ gốc trong kỳ,Nợ nước ngoài,2020,12,USD,"2.785,97",Thực tế,6,
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả nợ gốc trong kỳ,Nợ nước ngoài,2020,12,VND,"64.624,86",Thực tế,9,23181.0
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả nợ gốc trong kỳ,Nợ nước ngoài,2021,12,USD,"2.529,21",Thực tế,6,
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả nợ gốc trong kỳ,Nợ nước ngoài,2021,12,VND,"58.561,07",Thực tế,9,23126.0
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả nợ gốc trong kỳ,Nợ nước ngoài,2022,12,USD,"2.790,81",Dự kiến,6,
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả nợ gốc trong kỳ,Nợ nước ngoài,2022,12,VND,"64.839,41",Dự kiến,9,23681.0
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả nợ gốc trong kỳ,Nợ nước ngoài,2023,6,USD,"1.331,38",Dự kiến,6,
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả nợ gốc trong kỳ,Nợ nước ngoài,2023,6,VND,"31.463,78",Dự kiến,9,23660.0
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả nợ gốc trong kỳ,Nợ trong nước,2019,12,USD,"6.078,08",Thực tế,6,
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả nợ gốc trong kỳ,Nợ trong nước,2019,12,VND,"139.899,28",Thực tế,9,23143.0
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả nợ gốc trong kỳ,Nợ trong nước,2020,12,USD,"7.919,89",Thực tế,6,
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả nợ gốc trong kỳ,Nợ trong nước,2020,12,VND,"183.819,30",Thực tế,9,23181.0
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả nợ gốc trong kỳ,Nợ trong nước,2021,12,USD,"8.772,10",Thực tế,6,
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả nợ gốc trong kỳ,Nợ trong nước,2021,12,VND,"203.137,76",Thực tế,9,23126.0
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả nợ gốc trong kỳ,Nợ trong nước,2022,12,USD,"6.428,58",Dự kiến,6,
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả nợ gốc trong kỳ,Nợ trong nước,2022,12,VND,"149.344,50",Dự kiến,9,23681.0
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả nợ gốc trong kỳ,Nợ trong nước,2023,6,USD,"3.963,38",Dự kiến,6,
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả nợ gốc trong kỳ,Nợ trong nước,2023,6,VND,"93.650,64",Dự kiến,9,23660.0
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả lãi và phí trong kỳ,,2019,12,USD,"4.867,69",Thực tế,6,
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả lãi và phí trong kỳ,,2019,12,VND,"112.039,09",Thực tế,9,23143.0
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả lãi và phí trong kỳ,,2020,12,USD,"4.927,18",Thực tế,6,
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả lãi và phí trong kỳ,,2020,12,VND,"114.357,99",Thực tế,9,23181.0
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả lãi và phí trong kỳ,,2021,12,USD,"4.640,90",Thực tế,6,
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả lãi và phí trong kỳ,,2021,12,VND,"107.471,32",Thực tế,9,23126.0
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả lãi và phí trong kỳ,,2022,12,USD,"4.395,54",Dự kiến,6,
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả lãi và phí trong kỳ,,2022,12,VND,"102.121,70",Dự kiến,9,23681.0
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả lãi và phí trong kỳ,,2023,6,USD,"2.350,87",Dự kiến,6,
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả lãi và phí trong kỳ,,2023,6,VND,"55.549,36",Dự kiến,9,23660.0
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả lãi và phí trong kỳ,Nợ nước ngoài,2019,12,USD,"735,26",Thực tế,6,
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả lãi và phí trong kỳ,Nợ nước ngoài,2019,12,VND,"16.923,02",Thực tế,9,23143.0
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả lãi và phí trong kỳ,Nợ nước ngoài,2020,12,USD,"722,15",Thực tế,6,
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả lãi và phí trong kỳ,Nợ nước ngoài,2020,12,VND,"16.760,00",Thực tế,9,23181.0
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả lãi và phí trong kỳ,Nợ nước ngoài,2021,12,USD,"627,15",Thực tế,6,
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả lãi và phí trong kỳ,Nợ nước ngoài,2021,12,VND,"14.523,84",Thực tế,9,23126.0
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả lãi và phí trong kỳ,Nợ nước ngoài,2022,12,USD,"621,37",Dự kiến,6,
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả lãi và phí trong kỳ,Nợ nước ngoài,2022,12,VND,"14.442,75",Dự kiến,9,23681.0
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả lãi và phí trong kỳ,Nợ nước ngoài,2023,6,USD,"371,37",Dự kiến,6,
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả lãi và phí trong kỳ,Nợ nước ngoài,2023,6,VND,"8.775,73",Dự kiến,9,23660.0
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả lãi và phí trong kỳ,Nợ trong nước,2019,12,USD,"4.132,43",Thực tế,6,
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả lãi và phí trong kỳ,Nợ trong nước,2019,12,VND,"95.116,07",Thực tế,9,23143.0
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả lãi và phí trong kỳ,Nợ trong nước,2020,12,USD,"4.205,03",Thực tế,6,
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả lãi và phí trong kỳ,Nợ trong nước,2020,12,VND,"97.597,99",Thực tế,9,23181.0
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả lãi và phí trong kỳ,Nợ trong nước,2021,12,USD,"4.013,75",Thực tế,6,
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả lãi và phí trong kỳ,Nợ trong nước,2021,12,VND,"92.947,48",Thực tế,9,23126.0
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả lãi và phí trong kỳ,Nợ trong nước,2022,12,USD,"3.774,17",Dự kiến,6,
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả lãi và phí trong kỳ,Nợ trong nước,2022,12,VND,"87.678,95",Dự kiến,9,23681.0
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả lãi và phí trong kỳ,Nợ trong nước,2023,6,USD,"1.979,50",Dự kiến,6,
+TỔNG TRẢ NỢ TRONG KỲ,Tổng trả lãi và phí trong kỳ,Nợ trong nước,2023,6,VND,"46.773,63",Dự kiến,9,23660.0

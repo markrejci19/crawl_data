@@ -1,51 +1,47 @@
-from pdf2image import convert_from_path
-import easyocr
 import pandas as pd
-import re
-import os
-import numpy as np
 
-# Đường dẫn PDF
-pdf_path = "a.pdf"
+# Đọc dữ liệu, bỏ qua dòng đầu, header ở dòng 1
+df = pd.read_csv('402.csv')
 
-if not os.path.exists(pdf_path):
-    raise FileNotFoundError(f"Không tìm thấy file PDF: {pdf_path}")
+# Lấy dữ liệu từ cột 0 đến cột 10
+df = df.iloc[:, 0:11]
 
-try:
-    # Chuyển PDF -> ảnh
-    pages = convert_from_path(pdf_path, dpi=300)
-except Exception as e:
-    print(f"Lỗi khi chuyển PDF sang ảnh: {e}")
-    exit(1)
+# Lấy giá trị distinct của cột name_table (cột 11)
+data_group = pd.read_csv('402.csv')[df.columns[0]].unique()[0]
+df['DATA_GROUP'] = data_group
 
-reader = easyocr.Reader(['vi'], gpu=False)
+# Đánh dấu group
+L1_list = ["DƯ NỢ", "RÚT VỐN TRONG KỲ", "TỔNG TRẢ NỢ TRONG KỲ"]
+L2_list = ["Tổng trả nợ gốc trong kỳ", "Tổng trả lãi và phí trong kỳ"]
+L3_list = ["Nợ nước ngoài", "Nợ trong nước"]
 
-results = []
-for i, page in enumerate(pages, start=1):
-    try:
-        # OCR toàn bộ text
-        text = reader.readtext(np.array(page), detail=0, paragraph=True)
-        text = "\n".join(text)
-    except Exception as e:
-        print(f"Lỗi OCR trang {i}: {e}")
-        continue
+df['GROUP'] = None
+df['L1'] = None
+df['L2'] = None
+df['L3'] = None
 
-    print(f"\n--- Nội dung OCR trang {i} ---")
-    print(text)
-    results.extend(text.split("\n"))
-
-# Xử lý bảng từ OCR
-data = []
-for line in results:
-    # Tách theo 2 hoặc nhiều khoảng trắng liên tiếp
-    row = re.split(r"\s{2,}", line)
-    # Loại bỏ dòng không đủ dữ liệu
-    if len(row) > 1:
-        data.append(row)
-
-if data:
-    # Nếu đoán được số cột, có thể đặt tên cột ở đây
-    df = pd.DataFrame(data)
-    print(df.head(10))
-else:
-    print("Không tìm thấy dữ liệu bảng phù hợp.")
+last_L1 = None
+last_L2 = None
+for idx, row in df.iterrows():
+	val = str(row[df.columns[0]]).strip()
+	if val in L1_list:
+		df.at[idx, 'GROUP'] = 'L1'
+		last_L1 = val
+		last_L2 = None
+		df.at[idx, 'L1'] = last_L1
+	elif val in L2_list:
+		df.at[idx, 'GROUP'] = 'L2'
+		df.at[idx, 'L1'] = last_L1
+		last_L2 = val
+		df.at[idx, 'L2'] = last_L2
+	elif val in L3_list:
+		df.at[idx, 'GROUP'] = 'L3'
+		df.at[idx, 'L3'] = val
+		if last_L2:
+			df.at[idx, 'L2'] = last_L2
+			df.at[idx, 'L1'] = last_L1
+		else:
+			df.at[idx, 'L1'] = last_L1
+df = df.drop(df.columns[0], axis=1)
+df = df.drop('GROUP', axis=1)
+df.to_csv('output.csv', index=False)
